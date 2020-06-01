@@ -3,19 +3,25 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
+#cat-photo-form {
+   background-color: green;
+}
+
 .red-text {
   color: red;
 }
 
 .smaller-image {
   width: 100px;
+  padding: 20px;
+  margin: 10px;
 }
 
 .thick-green-border {
   border-color: green;
   border-width: 10px;
   border-style: solid;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 .silver-background {
@@ -53,7 +59,7 @@ p {
           <li>other cats</li>
         </ol>
       </div>
-      <form action="/submit-cat-photo">
+      <form id="cat-photo-form" action="/submit-cat-photo">
         <label for="indoor">
           <input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor
         </label>
